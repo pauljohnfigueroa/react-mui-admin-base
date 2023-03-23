@@ -12,7 +12,7 @@ export const useRegisterUser = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('http://localhost:4000/api/user/register', {
+        const response = await fetch(`${process.env.REACT_APP_API_SERVER}/api/user/register`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ export const useRegisterUser = () => {
         if (response.ok) {
 
             const fetchUsers = async () => {
-                const response = await fetch(`http://localhost:4000/api/user`, {
+                const response = await fetch(`${process.env.REACT_APP_API_SERVER}/api/user`, {
                     headers: {
                         Authorization: `Bearer ${user.token}`
                     }

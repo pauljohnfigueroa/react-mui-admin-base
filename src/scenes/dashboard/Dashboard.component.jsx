@@ -1,4 +1,4 @@
-import { Box, Button, IconButton, useTheme, Typography, colors } from '@mui/material'
+import { Box, Button, IconButton, useTheme, Typography } from '@mui/material'
 
 import { tokens } from '../../theme'
 import { mockTransactions } from '../../data/mockData'
@@ -12,7 +12,7 @@ import TrafficIcon from '@mui/icons-material/Traffic'
 import LineChart from '../../components/line-chart/LineChart.component'
 import PieChart from '../../components/pie-chart/PieChart.component'
 import GeographyChart from '../../components/geography-chart/GeographyChart.component'
-import BarChart from '../../components/bar-chart/BarChart.component'
+// import BarChart from '../../components/bar-chart/BarChart.component'
 
 import ProgressCircle from '../../components/progress-circle/ProgressCircle.component'
 import StatBox from '../../components/stat-box/StatBox.component'

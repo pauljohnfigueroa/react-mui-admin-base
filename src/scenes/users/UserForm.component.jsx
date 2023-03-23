@@ -47,7 +47,7 @@ const UserForm = () => {
 
   const handleUpdateUser = async values => {
     // Delete item/s from the database - Backend
-    const response = await fetch(`http://localhost:4000/api/user/${values._id}`, {
+    const response = await fetch(`${process.env.REACT_APP_API_SERVER}/api/user/${values._id}`, {
       method: 'PATCH',
       headers: {
         'Content-type': 'application/json',

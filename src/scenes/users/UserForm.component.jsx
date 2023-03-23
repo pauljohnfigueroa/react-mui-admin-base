@@ -145,21 +145,23 @@ const UserForm = () => {
                     onBlur={handleBlur}
                     required
                   />
-                  <TextField
-                    autoComplete="off"
-                    fullWidth
-                    margin="dense"
-                    name="password"
-                    id="password"
-                    value={values.password}
-                    label="Password"
-                    type="password"
-                    variant="outlined"
-                    sx={{ gridColumn: 'span 4' }}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    required
-                  />
+                  {!values._id && (
+                    <TextField
+                      autoComplete="off"
+                      fullWidth
+                      margin="dense"
+                      name="password"
+                      id="password"
+                      value={values.password}
+                      label="Password"
+                      type="password"
+                      variant="outlined"
+                      sx={{ gridColumn: 'span 4' }}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      required
+                    />
+                  )}
                   <FormControl sx={{ m: 1, minWidth: 150 }} required>
                     <InputLabel id="demo-simple-select-helper-label">Role</InputLabel>
                     <Select

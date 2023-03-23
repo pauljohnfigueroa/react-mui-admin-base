@@ -111,12 +111,6 @@ const Users = () => {
       flex: 1
     },
     {
-      field: 'password',
-      headerName: 'Password',
-      headerAlign: 'left',
-      align: 'left'
-    },
-    {
       field: 'phone',
       headerName: 'Phone Number',
       flex: 1
